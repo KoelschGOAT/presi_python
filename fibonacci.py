@@ -20,6 +20,6 @@ print(t1.timeit(1))
 print(fib(35))
 
 
-t2 = timeit.Timer("fibb(35)", "from __main__ import fib")
+t2 = timeit.Timer("fibb(35)", "from __main__ import fibb")
 print(t2.timeit(1))
 print(fibb(35))
