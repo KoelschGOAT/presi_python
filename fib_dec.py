@@ -7,5 +7,5 @@ def memory(function):
             val = function(*args)
             cache[args] = val
             return val
-
+        print(f"cache: {cache}")
     return decorated_function

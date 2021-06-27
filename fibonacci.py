@@ -7,7 +7,10 @@ def fib(n):
     if n < 2:
         return n
     else:
-        return fib(n-1) + fib(n-2)
+        val = fib(n-1) + fib(n-2)
+        print(val)
+    return val
+
 def fibb(n):
     if n < 2:
         return n
@@ -16,7 +19,7 @@ def fibb(n):
 
 
 t1 = timeit.Timer("fib(35)", "from __main__ import fib")
-print(t1.timeit(1))
+print(f"Exec_Time: {t1.timeit(1)}")
 print(fib(35))
 
 
